@@ -19,16 +19,16 @@
 
     <header>
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img  class="icone-diferences" src="./assets/img/icones/icon-1.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img  class="logo" src="./assets/img/icones/icon-1.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="menu collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-item nav-link" href="#">Empresa</a>
+                <a class="nav-item nav-link" href="#">Portfólio</a>
+                <a class="nav-item nav-link" href="#" >Contato</a>
               </div>
             </div>
           </nav>
@@ -61,16 +61,16 @@
                     <div class="LegusElement-form">
                         <form>
                             <div class="form-group mb-5">
-                                <label for="exampleInputEmail1">Nome Completo</label>
+                                <label for="InputName">Nome Completo</label>
                                 <input type="text" class="form-item" id="InputName" aria-describedby="Nome Completo" >
                                 
                             </div>
                             <div class="form-group mb-5">
-                                <label for="exampleInputPassword1">E-mail</label>
+                                <label for="InputEmail">E-mail</label>
                                 <input type="text" class="form-item" id="InputEmail" >
                             </div>
                             <div class="form-group mb-5">
-                                <label for="exampleInputPassword1">Telefone/WhatsApp</label>
+                                <label for="InputTelephone">Telefone/WhatsApp</label>
                                 <input type="text" class="form-item" id="InputTel" >
                             </div>
                             <div class="form-group mb-5">
@@ -94,7 +94,15 @@
                                     <label for="formControlRange">Envie sua planta</label>
                                   <input type="text" class="form-control" placeholder="Last name">
                                 </div>
+
                               </div>
+                              <div class="form-group mb-5">
+                                <label for="comments">Comentários</label>
+                                <textarea type="text" class="form-item" id="InputComment" ></textarea>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-primary" type="submit">Enviar</button>
+                            </div>
                         </form>
                 </div>
                 </div>
@@ -105,17 +113,36 @@
 
     <footer>
         <div class="row footer">
-            <div class="col-md-2 col-sm-12">
+            <div class="col-md-2 col-sm-12 box1">
                 <div class="logo">
-                    
+                    <a class="navbar-brand" href="#"><img  class="logo" src="./assets/img/icones/icon-1.png" alt=""></a>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-12">
-                <p>copyright 2021. dux grupo. via valdomiro bertasse, 1198 - itupeva, sp</p>
+            <div class="col-md-3 col-sm-12 box2">
+               <div class="row">
+                <i class="fas fa-map-marker-alt"></i>
+                <p><strong>Legus Engenharia</strong></p>
+               </div>
+               <div class="row">
+                <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+               </div>
             </div>
-            <div class="col-md-3 col-sm-12">
-                <p>copyright 2021. dux grupo. via valdomiro bertasse, 1198 - itupeva, sp</p>
-            </div>
+
+            <div class="col-md-3 col-sm-12 box3">
+                <div class="row">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>11 99248-1991</p>
+                </div>
+                <div class="row">
+                    <i class="far fa-envelope"></i>
+                    <p>administrativo@legus.eng.br</p>
+                </div>
+                <div class="row">
+                    <i class="fab fa-instagram"></i>
+                    <p>@legus.engenharia</p>
+                </div>
+                
+           
         </div>
     </footer>
 
