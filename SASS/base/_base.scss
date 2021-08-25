@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+.wrapper {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    margin-left: 0px;
+    margin-right: 0;
+    overflow: hidden;
+    // classe junto com a row
+    @media (max-width:767px) {
+        .grid-reverse{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-flow: dense;
+            .grid-positionA{
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .grid-positionB{
+                grid-column: 1;
+                grid-row: 1;
+            }
+        }
+    }
+    &__px-30{
+        padding: 0 30px;
+    }
+}
+

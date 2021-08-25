@@ -1,0 +1,92 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+
+header{
+    background-color: $primary-color;
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.LegusElement-image-banner{
+    position: relative;
+    img{
+        width: 100%;
+    }
+}
+
+
+.LegusSection-content{
+    background-color: #eff2fb;
+    padding: 30px;
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+        .LegusElement-text{
+            padding: 60px;
+            @media (max-width: 600px){
+                padding: 30px;
+              }
+            h1{
+                color: $primary-color;
+                font-size: 4rem;
+            }
+            p{
+                font-size: 1.15rem;
+                letter-spacing: 0px;
+                font-weight: 400;  
+            }
+        }
+    }
+}
+
+.LegusElement-form{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 14px -3px rgba(102,102,102,0.75);
+    -webkit-box-shadow: 10px 10px 14px -3px rgba(102,102,102,0.75);
+    -moz-box-shadow: 10px 10px 14px -3px rgba(102,102,102,0.75);
+    margin-top: -20%;
+    @media (max-width: 600px){
+        margin-top: 0;
+    }
+    form{
+        padding: 45px;
+        .form-item{
+            display: block;
+            width: 100%;
+            padding: .475rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 2;
+            color: #495057;
+            background-color: #fff;  
+            border: #fff;
+            border-bottom: 1px solid $secondary-color;
+            border-radius: .25rem;      
+        }
+        label{
+            font-size: 1.15rem;
+            font-weight: 500; 
+        }
+    }
+}
+    
+.footer{
+    padding: 45px;
+    background-color: $primary-color;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    .logo{
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 20%;
+        }
+    }
+    
+}
