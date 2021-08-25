@@ -5,9 +5,27 @@
 
 header{
     background-color: $primary-color;
+    .logo{
+        @media (max-width: 600px){
+            width: 50px;
+        }
+    }
     .menu{
         display: flex;
         justify-content: flex-end;
+        @media (max-width: 800px){
+            justify-content: end;
+        }
+        .nav-item{
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-right: 45px;
+            &:hover, &:active{
+                border-bottom: solid 2px #ffffff;
+            }
+        } 
+        
     }
 }
 
@@ -76,7 +94,7 @@ header{
 }
     
 .footer{
-    padding: 45px;
+    padding: 30px;
     background-color: $primary-color;
     color: #ffffff;
     display: flex;
@@ -84,8 +102,29 @@ header{
     .logo{
         display: flex;
         justify-content: flex-end;
+        float: right;
         img{
             width: 20%;
+        }
+    }
+    p{
+        font-size: 0.950rem;
+        font-weight: 300;
+    }
+    i{
+        font-size: 1.250rem; 
+        margin-right: 10px;
+    }
+    .box1, .box2, .box3{
+        padding: 60px;
+        @media (max-width: 600px){
+            padding: 30px;
+        }
+    }
+    .box3{
+        border-left: 1px solid #fff;
+        @media (max-width: 600px){
+            border:none;
         }
     }
     
