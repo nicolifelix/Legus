@@ -10,6 +10,9 @@ header{
             width: 50px;
         }
     }
+    .fa-bars{
+        color: #ffffff;
+    }
     .menu{
         display: flex;
         justify-content: flex-end;
@@ -24,8 +27,7 @@ header{
             &:hover, &:active{
                 border-bottom: solid 2px #ffffff;
             }
-        } 
-        
+        }  
     }
 }
 
@@ -33,24 +35,34 @@ header{
     position: relative;
     img{
         width: 100%;
+        height: 650px;
+        @media (max-width: 600px){
+            height: auto;
+          }
     }
 }
 
 
 .LegusSection-content{
     background-color: #eff2fb;
-    padding: 30px;
+    padding: 30px 30px 90px 30px;
+    @media (max-width: 600px){
+        padding: 15px;
+      }
     .row{
         display: flex;
         justify-content: space-evenly;
         .LegusElement-text{
             padding: 60px;
             @media (max-width: 600px){
-                padding: 30px;
+                padding: 15px;
               }
             h1{
                 color: $primary-color;
                 font-size: 4rem;
+                @media (max-width: 600px){
+                    font-size: 3rem;
+                  }
             }
             p{
                 font-size: 1.15rem;
@@ -84,11 +96,42 @@ header{
             background-color: #fff;  
             border: #fff;
             border-bottom: 1px solid $secondary-color;
-            border-radius: .25rem;      
+            border-radius: .25rem;   
+            &:focus-visible{
+                outline: none;
+            }   
         }
         label{
             font-size: 1.15rem;
-            font-weight: 500; 
+            font-weight: 500;
+            letter-spacing: -1px;
+            margin-bottom: 2rem;
+
+        }
+        .btn-legus{
+            display: inline-block;
+            font-weight: 600;
+            color: #fff;
+            background-color: $primary-color;
+            border-color: $primary-color;
+            text-align: center;
+            vertical-align: middle;
+            width: 200px;
+            height: 45px;
+            padding: .375rem .75rem;
+            font-size: 1.150rem;
+            line-height: 1.5;
+            border-radius: 1.5rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        .submit{
+            background-color: $third-color;
+            border-color: $third-color; 
+            width: 140px;
+            height: 35px;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.250;
         }
     }
 }
@@ -104,7 +147,7 @@ header{
         justify-content: flex-end;
         float: right;
         img{
-            width: 20%;
+            width: 60%;
         }
     }
     p{
@@ -116,7 +159,7 @@ header{
         margin-right: 10px;
     }
     .box1, .box2, .box3{
-        padding: 60px;
+        padding: 15px 45px;
         @media (max-width: 600px){
             padding: 30px;
         }
@@ -129,3 +172,4 @@ header{
     }
     
 }
+
