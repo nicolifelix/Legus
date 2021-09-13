@@ -23,3 +23,5 @@ jQuery(document).ready(function ($) {
 });
 
 (console.info || console.log).call(console, "%c<Dev by 🧪 LAB2B Team/>", "color: MediumVioletRed ; font-weight: bold;");
+
+
