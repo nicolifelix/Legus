@@ -13,7 +13,9 @@ var Controller = {
     },
     global: function(){
         Util.corousel();
-        
+        alert('oi');
+        Util.caroulselHome();
+        Util.caroulselVideo();
     },
 
 };

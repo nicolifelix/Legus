@@ -26,27 +26,23 @@
             </button>
             <div class="menu collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Empresa</a>
-                <a class="nav-item nav-link" href="#">Portfólio</a>
-                <a class="nav-item nav-link" href="#" >Contato</a>
+                <a class="nav-item nav-link" href="page-home.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="page-empresa.html">Empresa</a>
+                <a class="nav-item nav-link" href="page-portfolio.html">Portfólio</a>
+                <a class="nav-item nav-link" href="page-contato.html" >Contato</a>
               </div>
             </div>
           </nav>
     </header>
-
-
     <main id="legus"  class="wrapper">
 
         <section class="LegusSection-banner">
-            <div class="LegusElement-image-banner">   
-                <div class="banner-image">
-                    <img src="./assets/img/banners/banner-1.jpeg" alt="" srcset="">
-                </div>
+            <div class="LegusElement-banner">   
+                <img class="LegusElement-banner__image" src="./assets/img/banners/banner-1.jpeg" alt="" srcset="">
             </div>        
         </section>
 
-        <section class="LegusSection-content">
+        <section class="LegusSection-content__img">
             <div class="row"> 
                 <div class="col-md-5 col-sm-11">
                    <div class="LegusElement-text">
@@ -119,6 +115,22 @@
                             <div class="row">
                                 <button class="btn btn-legus" type="submit">Enviar</button>
                             </div>
+
+                            <input type="range" list="tickmarks">
+
+                                <datalist id="tickmarks">
+                                <option value="0" label="0%">
+                                <option value="10">
+                                <option value="20">
+                                <option value="30">
+                                <option value="40">
+                                <option value="50" label="50%">
+                                <option value="60">
+                                <option value="70">
+                                <option value="80">
+                                <option value="90">
+                                <option value="100" label="100%">
+                                </datalist>
                         </form>
                 </div>
                 </div>
@@ -158,7 +170,7 @@
                     <img  class="icon" src="./assets/img/partes/instagram.png" alt="">
                     <p>@legus.engenharia</p>
                 </div>
-                
+            </div>    
            
         </div>
     </footer>
