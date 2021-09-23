@@ -1,30 +1,39 @@
 
 .soft-text__empresa{
     .row{
-        align-items: flex-end;
+        align-items: center;
+       
     }
     h1{
         font-size: 4.2rem;
-        font-weight: 400;
+        font-weight: 300;
         letter-spacing: -2px;
+        color: $primary-color;
     }
     .soft-text__img{
-        width: 84px;
+        width: 65px;
         transition: all 0.8s ease;
+        text-align: center;
+        margin-left: 10px;
         &:hover{
             transform: scale(1.3) rotate(5deg);
+        }
+        .fab{
+            font-size: 45px;
+            color: $primary-color;
         }
     }
     p{
         font-size: 1.850rem;
-        font-weight: 400;
+        font-weight: 100;
         color: $primary-color;
-        letter-spacing: -1px;
+        margin-top: 10px;
     }
 }
 .soft-media__empresa{
     .soft-image__notebook{
         width: 550px;
+        margin-bottom: -55px;
     }
 }
 
