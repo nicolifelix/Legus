@@ -1,7 +1,7 @@
 const swiper = new Swiper(".swiper-container", {
-    slidesPerView: 2,
+    slidesPerView: 3,
     slidesPerGroup: 1,
-    centeredSlides: true,
+    
     autoplay: 1500,
     loop: true,
     pagination: {
@@ -11,8 +11,8 @@ const swiper = new Swiper(".swiper-container", {
      breakpoints: {
       // when window width is >= 600px
       600: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
         spaceBetween: 5,
         centeredSlides: true
         
@@ -26,6 +26,7 @@ const swiper = new Swiper(".swiper-container", {
       },
     }
   });
+
 
   
   const swiper2 = new Swiper(".swiper-banner", {
@@ -42,6 +43,36 @@ const swiper = new Swiper(".swiper-container", {
        // when window width is >= 900px
        
     
+  });
+
+
+  const swiper3 = new Swiper(".swiper-card", {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    centeredSlides: true,
+    autoplay: 1500,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+     breakpoints: {
+      // when window width is >= 600px
+      600: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 5,
+        centeredSlides: true
+        
+      },
+       // when window width is >= 900px
+       900: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 5,
+         centeredSlides: false
+      },
+    }
   });
 
   
