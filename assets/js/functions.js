@@ -1,6 +1,7 @@
+
 const swiper = new Swiper(".swiper-container", {
-    slidesPerView: 3,
-    slidesPerGroup: 1,
+    slidesPerView: 4,
+    slidesPerGroup: 4,
     
     autoplay: 1500,
     loop: true,
@@ -47,8 +48,8 @@ const swiper = new Swiper(".swiper-container", {
 
 
   const swiper3 = new Swiper(".swiper-card", {
-    slidesPerView: 3,
-    slidesPerGroup: 3,
+    slidesPerView: 2,
+    slidesPerGroup: 1,
     centeredSlides: true,
     autoplay: 1500,
     loop: true,

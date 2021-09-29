@@ -1,5 +1,5 @@
 /*
- * Projeto: DUX LP
+ * Projeto: Legus
  * Desenvolvimento: LAB2B
  */
 
@@ -13,17 +13,14 @@ var Controller = {
     },
     global: function(){
         Util.corousel();
-        alert('oi');
-        Util.caroulselHome();
-        Util.caroulselVideo();
+       
     },
 
 };
 
 jQuery(document).ready(function ($) {
-    
+    Controller.global();
 });
 
 (console.info || console.log).call(console, "%c<Dev by 🧪 LAB2B Team/>", "color: MediumVioletRed ; font-weight: bold;");
-
 
