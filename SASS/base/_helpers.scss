@@ -2,3 +2,48 @@
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
 
+// SLIDES
+.swiper-slide {
+  transition: all 300ms ease-in-out;
+}
+
+.LegusSection-banner{
+  position: relative;
+  .swiper-banner{
+    overflow: hidden;
+  }
+  .LegusElement-banner{
+    .LegusElement-banner__image{
+      width: 100%;
+      height: 550px;
+      @media (max-width: 800px){
+        height: 250px;
+      }
+    }
+  }    
+}
+
+
+// BULLETS
+.swiper-pagination-bullet{
+  width: 24px;
+  height: 24px;
+}  
+.swiper-pagination-bullet-active{
+  width: 26px;
+  height: 26px;
+  border: 3px solid $secondary-color;
+  background-color: $primary-color;
+} 
+
+
+  @media (max-width: 800px){
+    .box-img{
+    height: 200px !important;
+    .manual-itens{
+      padding: 30px 30px !important;
+      margin: 5px;
+    }
+  }
+}
+
