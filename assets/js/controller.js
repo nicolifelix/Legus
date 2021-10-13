@@ -12,14 +12,16 @@ var Controller = {
         }
     },
     global: function(){
-        Util.corousel();
-       
+        Util.bannerCaroulsel();
+        Util.videoCarousel();
+        Util.cardCarousel();
+        Util.addFile();
     },
 
 };
 
 jQuery(document).ready(function ($) {
-    Controller.global();
+ Controller.global();
 });
 
 (console.info || console.log).call(console, "%c<Dev by 🧪 LAB2B Team/>", "color: MediumVioletRed ; font-weight: bold;");
